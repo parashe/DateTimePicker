@@ -32,3 +32,35 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+
+
+# DateTimepicker Component
+
+The `DateTimepicker` component is a React component that allows users to select date and time values using the Material-UI DateTimePicker. This component also includes functionality to handle date and time filtering and displays a loading spinner during searching.
+
+## Installation
+
+Before using this component, make sure you have the following dependencies installed:
+
+- React
+- Material-UI (MUI)
+- dayjs
+- @mui/x-date-pickers
+
+You can install them using npm or yarn:
+
+```bash
+npm install react
+npm install @mui/material @mui/x-date-pickers
+npm install dayjs
+
+
+
+Props
+The DateTimepicker component accepts the following optional props:
+
+color: Customize the spinner's color (default is #D9D9D9).
+ringWidth: Customize the spinner's ring width (default is 6).
+className: Add additional CSS classes to the component.
