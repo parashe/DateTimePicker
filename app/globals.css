@@ -2,6 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+/* css for scrollbar */
+.scrollable {
+  --thumb-color: #555;
+  --thumb-color-hover: #777;
+  --thumb-color-active: #aaa;
+  --track-color: transparent;
+}
+
+.scrollable {
+  scrollbar-color: var(--thumb-color) var(--track-color);
+  scrollbar-width: thin;
+}
+
+.scrollable::-webkit-scrollbar {
+  width: 8px;
+  background-color: var(--track-color);
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+  border-radius: 9999px;
+  background-color: var(--thumb-color);
+}
+
+.scrollable::-webkit-scrollbar-thumb:hover {
+  background-color: var(--thumb-color-hover);
+}
+
+.scrollable::-webkit-scrollbar-thumb:active {
+  background-color: var(--thumb-color-active);
+}
+
+
+
+
+
+
 @keyframes spinner-ring {
   100% {
     transform: rotate(360deg);
