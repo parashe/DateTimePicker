@@ -36,50 +36,31 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 
 
-### MultiSelectDropdown Component
-The MultiSelectDropdown component accepts the following props:
+# DateTimepicker Component
 
-options (array): An array of options to be displayed in the dropdown. Each option should have a value and a label.
+The `DateTimepicker` component is a React component that allows users to select date and time values using the Material-UI DateTimePicker. This component also includes functionality to handle date and time filtering and displays a loading spinner during searching.
 
-value (array): An array of currently selected values.
+## Installation
 
-onChange (function): A callback function to handle changes in selected values.
+Before using this component, make sure you have the following dependencies installed:
 
-label (string, optional): An optional label to display above the dropdown.
+- React
+- Material-UI (MUI)
+- dayjs
+- @mui/x-date-pickers
 
-errorMessage (string, optional): An optional error message to display.
+You can install them using npm or yarn:
 
-isEmpty (boolean, optional): An optional boolean to indicate if the dropdown is empty.
+```bash
+npm install react
+npm install @mui/material @mui/x-date-pickers
+npm install dayjs
 
-required (boolean, optional): An optional boolean to indicate if the dropdown is required.
 
-
-### Dropdown Select Component
-
-Installation
-Clone or download this repository to your project directory.
-
-Import the DropDownSelect component from the appropriate location in your project, depending on your folder structure.
-
-Ensure that you have React and the necessary dependencies installed in your project.
 
 Props
-The DropDownSelect component accepts the following props:
+The DateTimepicker component accepts the following optional props:
 
-options (required): An array of objects representing the available options in the dropdown. Each object should have a value and a label property.
-
-value (required): The currently selected value. Should be a string.
-
-onChange (required): A callback function that is called when an option is selected. It receives the selected value as a parameter.
-
-label (optional): A string to display as the label above the dropdown.
-
-errorMessage (optional): A string to display as an error message.
-
-isEmpty (optional): A boolean to indicate if the dropdown should be empty.
-
-disabled (optional): A boolean to disable the dropdown.
-
-className (optional): A string to specify additional CSS classes for styling.
-
-required (optional): A boolean to indicate if the field is required.
+color: Customize the spinner's color (default is #D9D9D9).
+ringWidth: Customize the spinner's ring width (default is 6).
+className: Add additional CSS classes to the component.

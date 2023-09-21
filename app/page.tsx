@@ -1,15 +1,10 @@
 import Image from 'next/image'
-
-import { Index } from './MultiPickerDropdown'
-import { ParentDropDownselect } from './SingleSelectDropdown'
-
+import DateTimepicker from './DateTimePicker/DateTimepicker'
 
 export default function Home() {
   return (
-<div className='container mx-auto flex'>
-
-  <Index/>
-  <ParentDropDownselect/>
+<div className='container mx-auto'>
+  <DateTimepicker/>
   </div>
   )
 }
